@@ -1,8 +1,7 @@
 
+/* Portfolio CSS */
 
-
-
-/*colors used
+/* colors used
 background color (ghost white: #F8F8FF;
 primary color : #489c79
 Secondary color (medium orchid): #0000CD
@@ -10,79 +9,77 @@ Secondary color (medium orchid): #0000CD
 --visited-color:;0000CD
 */
 
-
-
-
 :root {
-   --main-bg-color:#F8F8FF;
-   --primary-color: #489c79;
-   --secondary-color: #0000CD;
-   --text-color: #2b2b2b;
-   --main-header-color: #489c79;
-   --grid-color: #D3D3D3;
-   --button-color: #0000CD;
- }
+  --main-bg-color: #f8f8ff;
+  --primary-color: #489c79;
+  --secondary-color: #0000cd;
+  --text-color: #2b2b2b;
+  --main-header-color: #489c79;
+  --grid-color: #d3d3d3;
+  --button-color: #0000cd;
+}
 
- * {
-   box-sizing: border-box;
- }
+* {
+  box-sizing: border-box;
+}
 
-
-
- .header__title {
-  /* No spacing to top and bottom and auto-spacing to left and right, which centers the container horizontally*/
+.header__title {
+  /* No spacing to top and bottom and auto-spacing to left and right, which centers the container horizontally */
   margin: 0 auto;
 }
 
-body{
-  background-color: #F8F8FF;
-  text-color: #2b2b2b;
-font-family: 'Roboto', sans-serif;
-font-weight:400
+body {
+  background-color: #f8f8ff;
+  color: #2b2b2b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 }
 
-
-li{
-
-  color:#489c79;
-  padding-bottom:6px
+li {
+  padding-bottom: 6px;
 }
 
-h1{
-  color:#2b2b2b;
+h1 {
   font-size: 35px;
   font-variant: small-caps;
+  margin-left: 20px;
 }
 
+.button { /* overwrites browser defaults and resets the border */
+  border: none;
 
+  /* takes the font from the outer container */
+  display: inline-block;
 
-.button{ /* overwrites browser defaults and resets the border */
-border: none;
-/* takes the font from the outer container */
-display: inline-block;
-/* takes the font from the outer container */
-font-family: inherit;
-/* styles the background color, font color, and text decoration (underline, etc.) of the button */
-background-color: #0000CD;
+  /* the outer container */
+  font-family: inherit;
 
-color: white;
-text-decoration: none;
-/*adds spacing to the button (this will be discussed more in-depth later) */
-padding: 10px;
-border-radius: 3px;
-/* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-transition-duration: 0.2s;
-transition-property: opacity;
-}
-.button:hover, button:focus {
-/* lets the mouse appear as a hand when hovering over the button */
-cursor: pointer;
-/* reduces the opacity of the button to 80% */
-opacity: 0.7;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #0000cd;
+  color: white;
+  text-decoration: none;
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
-a:hover,a:focus{
+.button:hover,
+button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.7;
+}
+
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
   opacity: 0.7;
@@ -90,20 +87,20 @@ a:hover,a:focus{
 
 a:visited {
   /* visited link */
-  color:#2b2b2b;}
-
-  .navigation-list {
-  list-style-type: none;
-  text-decoration: none;
+  color: #8b0000;
 }
 
 a:active {
   /* selected link */
-  color: #0000CD;
+  color: #0000cd;
+}
+
+a {
+  color: #262626;
 }
 
 .navigation-list {
-  list-style-type: none;
+  text-decoration: none;
 }
 
 .navigation-list li {
@@ -117,94 +114,84 @@ a:active {
   left: 20px;
 }
 
-.navigation-list__item--active{
-     text-decoration:none;
-  }
-
-
+.navigation-list__item--active {
+  text-decoration: none;
+}
 
 div {
-  padding: 10px; /* Adds a 10px inner spacing to all sides*/
-  margin: 10px; /* Adds a 10px outer spacing to all sides*/
+  padding: 10px; /* Adds a 10px inner spacing to all sides */
+  margin: 10px; /* Adds a 10px outer spacing to all sides */
 }
 
 .profile__portrait {
   width: 60%;
   float: left;
-  margin-right:40px;
-  border-radius:50%;
-  border:2px solid orange;
+  margin-right: 40px;
+  border-radius: 50%;
+  border: 2px solid orange;
 }
 
 .profile {
   text-align: center;
-  color:#2b2b2b;
   max-width: 600px;
   margin: 0 auto;
   padding: 50px;
-
 }
 
-
-
-table: {
+table {
+  border: 1px solid black;
   border-collapse: collapse;
 }
 
-table, th, td {
-  border: 1px solid black;
-  width:80%;
+th,
+td {
+  border-bottom: 2px solid #ddd;
+  height: 50px;
+  width: 80%;
   padding: 15px;
 }
 
-th,td{
-    border-bottom: tpx solid #ddd;
-    height:50px;
-
-}
 th {
   text-align: left;
-  background-color: #87CEEB;
-  color:white;
+  background-color: #87ceeb;
+  color: white;
 }
 
-td{
-  vertical-align:bottom;
+td {
+  vertical-align: bottom;
 }
 
-tr: hover { background-color:#f5f5f5;}
+tr: hover { background-color: #f5f5f5; }
 
-tr: nth-child(even) {background-color: #f2f2f2;}
+tr: nth-child(even) { background-color: #f2f2f2; }
 
-a{
-  color:#0000CD;
+.form-group label {
+  display: block;
+  padding: 20px;
 }
 
-
-
-.form-group label{
- display:block;
- padding: 20 px;
+span {
+  color: blue;
+  font-weight: bold;
 }
 
 .enjoy {
   list-style-type: none;
-  color: #0000CD;
-
+  color: #0000cd;
 }
 
- .button__secondary {
+.button__secondary {
   background-color: #489c79;
   color: #262626;
-  text-decoration:none;
+  text-decoration: none;
   padding: 10px;
   transition-duration: 0.2s;
-  transition-property:opacity;
+  transition-property: opacity;
 }
 
 #submitbutton {
-  background-color: #0000CD;
-  color:#fff;
+  background-color: #0000cd;
+  color: #fff;
   padding: 10px;
   transition-duration: 0.2s;
   font-size: 20px;
@@ -221,8 +208,6 @@ a{
   border-color: #000;
 }
 
-
-
 .page-header__item {
   flex: 0 1 200px;
 }
@@ -232,26 +217,23 @@ a{
   text-align: right;
 }
 
-
- .page-footer {
-   display: flex;
-   padding: 100px;
-   clear: both;
-   justify-content: center;
-   text-align: center;
-   flex-direction: column;
+.page-footer {
+  display: flex;
+  padding: 100px;
+  clear: both;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
-.florida-image{
-  max-width:500px;
-  height:500px;
+.florida-image {
+  max-width: 500px;
+  height: 500px;
 }
 
 .grid {
   display: grid;
 }
-
-
 
 .grid__item {
   background-color: lightgray;
@@ -263,26 +245,24 @@ a{
   grid-template-rows: 300px 300px;
 }
 
-/* Grid fallback*/
-
+/* Grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
 }
 
-/* Styling CSS grid*/
-
+/* Styling CSS grid */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
-
 }
 
 .grid__item {
-  background-color: LightGrey;
+  background-color: lightgray;
   padding: 15px;
-  /* Set width to auto*/
+
+  /* Set width to auto */
   width: auto;
 }
 
@@ -296,68 +276,71 @@ a{
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
-    grid-gap: 10px
+    grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
 }
+
 @keyframes color-change {
   from {
     fill: #edc655;
   }
+
   to {
     fill: #f76414;
   }
 }
 
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-    50% {
-      fill: #fcffad;
-    }
-    100% {
-      fill: #f76414;
-    }
+@keyframes color-change {
+  0% {
+    fill: #edc655;
   }
 
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  50% {
+    fill: #fcffad;
   }
 
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
+  100% {
+    fill: #f76414;
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
 
-  @keyframes cloud-move-reverse {
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
   from {
     transform: translate(446px, 48px);
   }
+
   to {
     transform: translate(100px, 48px);
   }
 }
-
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
