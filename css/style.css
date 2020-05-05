@@ -132,10 +132,15 @@ div {
 }
 
 .profile {
+  display: block;
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
   padding: 50px;
+}
+
+.background-info {
+  display: inline-block;
 }
 
 table {
