@@ -1,0 +1,27 @@
+Issues
+
+in Android  7.1
+
+the H1 tag  broke up ("Welcome" remain next to the profile portrait, the rest of <h1>  and <p> moved below the portrait.
+
+Fixed by adding display: inline-block
+
+
+In all browsers
+
+<p> in about broke up, 
+
+Fixed
+
+removed all <br> tags and added display: inline-block
+
+Google Chrome
+
+Header color  seems blurry
+
+Fix: ?
+
+In all browers:
+
+When I clicked Download My resume 
+file failed even though dummy file added

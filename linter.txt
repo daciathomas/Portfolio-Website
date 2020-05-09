@@ -1,0 +1,10 @@
+Installed
+Linter-html lint     failed (uninstalled)
+and Linter-tidy  
+   
+Linter-style lint
+
+
+Web Editor:
+
+Atom
